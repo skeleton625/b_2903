@@ -1,17 +1,11 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-int i1, n1 = 1, n2 = 2;
-unsigned long r;
+int i1;
 
 int main() {
 	cin >> i1;
-	while (i1--) {
-		n2 += n1;
-		n1 *= 2;
-	}
-	r = pow(n2, 2);
-	cout << r;
+	cout << i1 * (i1 = ((1 << i1) + 1) );
+	// bit 로 한칸씩 밀 때마다 2를 곱해준다 ( 이진수 이므로)
 	return 0;
 }
